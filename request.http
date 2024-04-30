@@ -1,0 +1,34 @@
+GET http://localhost:3000/motos HTTP/1.1
+
+###
+
+GET http://localhost:3000/motos/1 HTTP/1.1
+
+###
+POST http://localhost:3000/motos HTTP/1.1
+Content-Type: application/json
+
+{
+    "marca": "Ducati",
+    "modelo": "Panigale V4",
+    "año": 2022,
+    "motor tipo": "4 cilindros en V",
+    "cilindrada": "1103 cc",
+    "potencia": "ca. 214 hp",
+    "precio": "US$ 59000"
+}
+
+###
+PUT http://localhost:3000/motos/4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "precio": "US$ 70000"
+}
+
+###
+
+DELETE http://localhost:3000/motos/4 HTTP/1.1
+
+###
+
